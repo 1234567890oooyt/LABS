@@ -1,0 +1,13 @@
+body > header > div > a.s-topbar--menu-btn.js-left-sidebar-toggle.is-selected
+/html/body/header/div/a[1]
+дропбокс
+
+
+#search > div > input
+//*[@id="search"]/div/input
+інпут
+
+
+body > header > div > nav > ol > li:nth-child(3) > a
+/html/body/header/div/nav/ol/li[3]/a
+баттон

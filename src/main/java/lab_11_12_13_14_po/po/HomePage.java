@@ -1,7 +1,6 @@
-package lab_11_12_po.po;
-import lab_11_12_po.Bo;
-import lab_11_12_po.decorator.GetCellData;
-import org.openqa.selenium.By;
+package lab_11_12_13_14_po.po;
+import lab_11_12_13_14_po.Bo;
+import lab_11_12_13_14_po.decorator.GetCellData;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

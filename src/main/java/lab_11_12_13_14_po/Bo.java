@@ -1,6 +1,6 @@
-package lab_11_12_po;
+package lab_11_12_13_14_po;
 
-import lab_11_12_po.decorator.MyFieldDecorator;
+import lab_11_12_13_14_po.decorator.MyFieldDecorator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 

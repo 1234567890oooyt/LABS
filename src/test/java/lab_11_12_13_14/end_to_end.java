@@ -1,18 +1,27 @@
-package lab_11_12;
+package lab_11_12_13_14;
 
 
+import com.automation.remarks.video.annotations.Video;
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
-import lab_11_12_po.Bo;
-import lab_11_12_po.po.HomePage;
+import lab_11_12_13_14_po.Bo;
+import lab_11_12_13_14_po.listeners.AllureTestListener;
+import lab_11_12_13_14_po.listeners.CustomSuiteListener;
+import lab_11_12_13_14_po.listeners.CustomTestListener;
+import lab_11_12_13_14_po.po.HomePage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import java.util.List;
 
+@Listeners({
+        CustomTestListener.class,
+        CustomSuiteListener.class,
+        AllureTestListener.class
+})
 public class end_to_end {
 
 
@@ -35,6 +44,8 @@ public class end_to_end {
         driver = new ChromeDriver(options);
         driver.manage().window().setSize(new Dimension(1024, 768));
     }
+
+    @Video
     @Test
     void MyTest() throws InterruptedException {
         Bo bo = new Bo(driver);

@@ -1,0 +1,9 @@
+<Person>
+    <name>Mark</name>
+    <address>
+        <city>Los Angeles</city>
+        <street>789 Oak St</street>
+        <state>CA</state>
+    </address>
+    <student>true</student>
+</Person>
